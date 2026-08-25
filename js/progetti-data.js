@@ -31,11 +31,11 @@ window.PROGETTI_PROJECTS = [
     order: 2,
     name: "Villa D|P",
     claim: "Una casa che sceglie di guardare altrove.",
-    image: "images/placeholder/placeholder-villa-d-p.svg",
-    alt: "Placeholder fotografico per Villa D|P — foto reale del progetto in arrivo",
+    image: "images/villa-d-p/hero-vista-esterna-5b.jpg",
+    alt: "Vista esterna della facciata di Villa D|P",
     slug: "villa-d-p",
-    href: null,
-    linkable: false
+    href: "progetto-villa-d-p.html",
+    linkable: true
   },
   {
     order: 3,
