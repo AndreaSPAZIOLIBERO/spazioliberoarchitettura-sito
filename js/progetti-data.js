@@ -31,7 +31,7 @@ window.PROGETTI_PROJECTS = [
     order: 2,
     name: "Villa D|P",
     claim: "Una casa che sceglie di guardare altrove.",
-    image: "images/villa-d-p/hero-vista-esterna-5b.jpg",
+    image: "images/villa-d-p/sguardo-vista-esterna-1.jpg",
     alt: "Vista esterna della facciata di Villa D|P",
     slug: "villa-d-p",
     href: "progetto-villa-d-p.html",
