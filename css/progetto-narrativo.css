@@ -33,8 +33,9 @@
 
 .villa-hero {
   position: relative;
-  width: 100%;
-  aspect-ratio: 3 / 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  aspect-ratio: 1240 / 480;
   overflow: hidden;
   background-color: var(--pn-navy);
 }
