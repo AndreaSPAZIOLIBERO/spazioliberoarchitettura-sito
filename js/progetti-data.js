@@ -21,81 +21,81 @@ window.PROGETTI_PROJECTS = [
     order: 1,
     name: "Villa E|I",
     claim: "Una casa nata da un cambiamento di direzione.",
-    image: "images/placeholder/placeholder-villa-e-i.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa E|I — foto reale del progetto in arrivo",
     slug: "villa-e-i",
-    href: "progetto-villa-e-i.html",
+    href: "progetto-villa-m-m.html",
     linkable: true
   },
   {
     order: 2,
     name: "Villa D|P",
     claim: "Una casa che sceglie di guardare altrove.",
-    image: "images/villa-d-p/sguardo-vista-esterna-1.jpg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Vista esterna della facciata di Villa D|P",
     slug: "villa-d-p",
-    href: "progetto-villa-d-p.html",
+    href: "progetto-villa-m-m.html",
     linkable: true
   },
   {
     order: 3,
     name: "Villa L|J",
     claim: "Una casa che porta il paesaggio dentro, senza rinunciare all'intimità.",
-    image: "images/placeholder/placeholder-villa-l-j.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa L|J — foto reale del progetto in arrivo",
     slug: "villa-l-j",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 4,
     name: "Villa E|L",
     claim: "Una casa pensata per crescere con chi la abita.",
-    image: "images/placeholder/placeholder-villa-e-l.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa E|L — foto reale del progetto in arrivo",
     slug: "villa-e-l",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 5,
     name: "Villa S",
     claim: "Ricostruire senza cancellare.",
-    image: "images/placeholder/placeholder-villa-s.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa S — foto reale del progetto in arrivo",
     slug: "villa-s",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 6,
     name: "Padiglione C",
     claim: "Un prototipo rimasto esemplare unico.",
-    image: "images/placeholder/placeholder-padiglione-c.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Padiglione C — foto reale del progetto in arrivo",
     slug: "padiglione-c",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 7,
     name: "Villa L|R",
     claim: "Una casa che parla di chi la abita.",
-    image: "images/placeholder/placeholder-villa-l-r.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa L|R — foto reale del progetto in arrivo",
     slug: "villa-l-r",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 8,
     name: "Villa M|M",
     claim: "Due case gemelle, un'unica radice, due vite diverse.",
-    image: "images/placeholder/placeholder-villa-m-m.svg",
+    image: "images/villa-m-m/hero.jpg",
     alt: "Placeholder fotografico per Villa M|M — foto reale del progetto in arrivo",
     slug: "villa-m-m",
-    href: null,
-    linkable: false
+    href: "progetto-villa-m-m.html",
+    linkable: true
   },
   {
     order: 9,
