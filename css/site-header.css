@@ -1,0 +1,26 @@
+@font-face{font-family:Outfit;src:url("Outfit_wght_.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+/* Header SPAZIOLIBERO unico — desktop, tablet e smartphone */
+.sl-site-header{position:relative;z-index:10000;width:100%;height:88px;background:#fff;border-bottom:1px solid #111;font-family:Outfit,Arial,sans-serif;color:#0a0a0a}
+.sl-site-header *{box-sizing:border-box}
+.sl-site-header__inner{width:min(1480px,calc(100% - 64px));height:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:34px}
+.sl-site-brand{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;color:#0a0a0a;text-decoration:none;line-height:.92;white-space:nowrap}
+.sl-site-brand b{font-size:19px;font-weight:760;letter-spacing:1.7px}
+.sl-site-brand span{font-size:12px;font-weight:430;letter-spacing:1.65px;margin-top:5px}
+.sl-site-nav{display:flex;align-items:center;justify-content:flex-end;gap:30px;min-width:0}
+.sl-site-nav a{font-size:12px;font-weight:600;letter-spacing:.25px;color:#111;text-decoration:none;white-space:nowrap;padding:10px 0 8px;border-bottom:2px solid transparent}
+.sl-site-nav a:hover,.sl-site-nav a[aria-current="page"]{border-bottom-color:#111}
+.sl-site-menu{display:none;position:relative}
+.sl-site-menu summary{width:46px;height:46px;list-style:none;cursor:pointer;position:relative;border:0}
+.sl-site-menu summary::-webkit-details-marker{display:none}
+.sl-site-menu summary:before,.sl-site-menu summary:after,.sl-site-menu summary span:before{content:"";position:absolute;left:10px;width:26px;height:1.5px;background:#111;transition:.2s}
+.sl-site-menu summary:before{top:14px}.sl-site-menu summary:after{top:30px}.sl-site-menu summary span:before{top:22px}
+.sl-site-menu[open] summary:before{transform:translateY(8px) rotate(45deg)}.sl-site-menu[open] summary:after{transform:translateY(-8px) rotate(-45deg)}.sl-site-menu[open] summary span:before{opacity:0}
+.sl-site-menu nav{position:absolute;right:0;top:53px;width:min(330px,calc(100vw - 32px));padding:10px 20px 18px;background:#fff;border:1px solid #111;box-shadow:0 12px 32px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.sl-site-menu nav a{font-size:16px;color:#111;text-decoration:none;padding:14px 0;border-bottom:1px solid #ddd;line-height:1.25}.sl-site-menu nav a:last-child{border-bottom:0}
+/* neutralizza tutti gli header precedenti senza toccare gli header editoriali interni */
+body > header:not(.sl-preserve-header){display:none!important}
+body #Header{display:none!important}
+body > .sl-mobile-header{display:none!important}
+@media(max-width:1120px){.sl-site-nav{gap:18px}.sl-site-nav a{font-size:11px}}
+@media(max-width:900px){.sl-site-header{height:72px}.sl-site-header__inner{width:calc(100% - 32px)}.sl-site-nav{display:none}.sl-site-menu{display:block}.sl-site-brand b{font-size:17px}.sl-site-brand span{font-size:11px}}
+@media(max-width:480px){.sl-site-header{height:68px}.sl-site-header__inner{width:calc(100% - 28px)}.sl-site-brand b{font-size:16px;letter-spacing:1.35px}.sl-site-brand span{font-size:10px;letter-spacing:1.35px}}

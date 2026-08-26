@@ -1,0 +1,11 @@
+/* Villa E|I — affinamento conservativo.
+   Mantiene integralmente la composizione originale e interviene solo su
+   qualità della fascia fotografica e chiusura della pagina. */
+.i13{object-fit:cover;object-position:center;display:block}
+/* Riduce eventuale spazio residuo Sitely tra contenuto e footer, senza
+   alterare la struttura del footer stesso. */
+body > .ps181{margin-top:-2624px}
+@media(max-width:1199px) and (min-width:960px){body > .ps181{margin-top:-2099px}}
+@media(max-width:959px) and (min-width:768px){body > .ps181{margin-top:-1679px}}
+@media(max-width:767px) and (min-width:480px){body > .ps181{margin-top:-869px}}
+@media(max-width:479px){body > .ps181{margin-top:-580px}}
