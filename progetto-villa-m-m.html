@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Villa M|M | SPAZIOLIBERO architettura</title>
+<meta name="description" content="Due case gemelle e specchiate: un'identità esterna condivisa, due modi diversi di abitare.">
+<style>
+@font-face{font-family:Outfit;src:url("css/Outfit_wght_.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--ink:#111;--muted:#686868;--line:#b9b9b9;--paper:#fff;--soft:#f7f7f5;--max:1480px;--content:1200px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Outfit,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:auto}
+header{height:86px;border-bottom:1px solid #111;display:flex;align-items:center}.header-in{width:min(var(--max),calc(100% - 64px));margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{line-height:.92}.brand b{display:block;font-size:19px;letter-spacing:1.8px}.brand span{font-size:12px;letter-spacing:1.8px}nav{display:flex;gap:38px;font-size:13px;font-weight:650}nav a.active{padding-bottom:8px;border-bottom:2px solid}
+.wrap{width:min(var(--content),calc(100% - 64px));margin:auto}
+.hero{position:relative;width:min(var(--max),calc(100% - 64px));margin:28px auto 0;min-height:620px;overflow:hidden;background:#ddd}.hero img{width:100%;height:620px;object-fit:cover;object-position:center 54%}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.48),rgba(0,0,0,.05) 58%,transparent)}.hero-copy{position:absolute;z-index:2;left:clamp(28px,5vw,78px);bottom:58px;color:#fff;max-width:650px}.hero h1{font-size:clamp(48px,6vw,82px);line-height:.95;font-weight:560;margin:0 0 22px}.hero p{font-size:clamp(22px,2.4vw,35px);line-height:1.18;font-weight:400;margin:0}
+.intro{display:grid;grid-template-columns:190px 1fr;gap:48px;padding:70px 0 78px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.8px}.intro h2,.section h2{font-size:clamp(30px,3.1vw,46px);line-height:1.08;font-weight:450;margin:0 0 28px}.intro p,.copy p{font-size:18px;line-height:1.72;max-width:760px;margin:0 0 18px}
+.section{padding:72px 0;border-bottom:1px solid var(--line)}.grid{display:grid;grid-template-columns:130px minmax(0,1fr);gap:48px}.num{font-size:54px;font-weight:350;line-height:1}.copy{max-width:790px}.media{margin-top:48px}.media img{max-height:720px;object-fit:cover}.caption{font-size:12px;color:var(--muted);margin-top:10px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}.split img{height:520px;object-fit:cover}
+.statement{background:var(--soft);padding:84px 0}.statement .inner{display:grid;grid-template-columns:130px 1fr;gap:48px}.statement blockquote{font-size:clamp(30px,3.4vw,50px);line-height:1.15;font-weight:420;margin:0;max-width:900px}.statement p{font-size:18px;line-height:1.7;max-width:760px;margin:30px 0 0}
+.final-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.final-grid img{height:560px;object-fit:cover}.final-grid img:last-child{object-position:center}
+.bottom-nav{width:min(var(--max),calc(100% - 64px));margin:30px auto 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fafafa;display:grid;grid-template-columns:1fr 1.5fr 1fr}.prev,.next{padding:22px 28px}.prev{border-right:1px solid #ddd}.next{border-left:1px solid #ddd;text-align:right}.nav-label{font-size:10px;letter-spacing:.7px}.nav-name{font-size:22px;margin-top:7px}.dialogue{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;gap:30px}.dialogue p{font-size:18px;line-height:1.3;margin:0}.dialogue a{border:1px solid #111;padding:15px 22px;font-size:13px}.dialogue a:hover{background:#111;color:#fff}
+footer{width:min(var(--max),calc(100% - 64px));margin:auto;padding:32px 0 44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;font-size:12px;line-height:1.55}
+@media(max-width:900px){nav{gap:20px}.intro{grid-template-columns:150px 1fr}.split{grid-template-columns:1fr}.split img{height:auto}.final-grid{grid-template-columns:1fr}.bottom-nav{grid-template-columns:1fr 1fr}.dialogue{grid-column:1/-1;order:3;border-top:1px solid #ddd}}
+@media(max-width:760px){header{height:auto;padding:20px 0}.header-in,.hero,.bottom-nav,footer{width:calc(100% - 32px)}nav{display:none}.hero{margin-top:16px;min-height:72vh}.hero img{height:72vh;object-position:center}.hero-copy{left:24px;right:24px;bottom:30px}.wrap{width:calc(100% - 32px)}.intro{grid-template-columns:1fr;gap:20px;padding:44px 0}.grid,.statement .inner{grid-template-columns:1fr;gap:20px}.section{padding:48px 0}.num{font-size:42px}.intro p,.copy p,.statement p{font-size:17px}.media{margin-top:30px}.media img{max-height:none}.split{margin-top:30px}.statement{padding:54px 0}.final-grid img{height:auto}.bottom-nav{grid-template-columns:1fr}.prev,.next{border:0;border-bottom:1px solid #ddd;text-align:left}.dialogue{display:block;padding:22px}.dialogue p{margin-bottom:18px}.dialogue a{display:inline-block}footer{grid-template-columns:1fr;gap:16px}}
+</style>
+<link href="css/site-header.css" rel="stylesheet"><link href="css/site-footer.css" rel="stylesheet">
+<style>
+#Header{display:none!important}
+body>header:first-of-type{display:none!important}
+body>footer:not(.sl-site-footer){display:none!important}
+</style></head>
+<body><div class="sl-site-header" role="banner"><div class="sl-site-header__inner"><a aria-label="SPAZIOLIBERO architettura — Home" class="sl-site-brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><nav aria-label="Navigazione principale" class="sl-site-nav"><a aria-current="page" href="progetti.html">PROGETTI</a><a href="indice-conversazioni.html">CONVERSAZIONI</a><a href="primo-incontro.html">DA DOVE COMINCIA UN PROGETTO</a><a href="studio.html"LO STUDIO</a><a href="mailto:contatto@spazioliberoarchitettura.it">CONTATTI</a></nav><details class="sl-site-menu"><summary aria-label="Apri il menu"><span></span></summary><nav aria-label="Navigazione mobile"><a href="index.html">Home</a><a aria-current="page" href="progetti.html">Progetti</a><a href="indice-conversazioni.html">Conversazioni</a><a href="primo-incontro.html">Da dove comincia un progetto</a><a href="studio.html"Lo studio</a><a href="mailto:contatto@spazioliberoarchitettura.it">Contatti</a></nav></details></div></div>
+<header><div class="header-in"><a class="brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><nav><a href="index.html">HOME</a><a class="active" href="progetti.html">PROGETTI</a><a href="indice-conversazioni.html">CONVERSAZIONI</a><a href="#">CULTURA DELL’ABITARE</a><a href="studio.html">LO STUDIO</a><a href="mailto:contatto@spazioliberoarchitettura.it">CONTATTI</a></nav></div></header>
+
+<section class="hero">
+<img src="images/villa-m-m/hero.jpg" alt="Villa M|M, le due case gemelle viste dalla strada">
+<div class="hero-copy"><h1>Villa M|M</h1><p>Due case gemelle,<br>un’unica radice, due vite diverse.</p></div>
+</section>
+
+<main>
+<section class="wrap intro">
+<div class="eyebrow">IL PROGETTO<br>VILLA M|M</div>
+<div><h2>Da fuori sembrano la stessa casa.<br>Dentro, non lo sono affatto.</h2>
+<p>Villa M|M nasce in realtà come un progetto doppio. Due case affiancate e specchiate, pensate fin dall'inizio per due nuclei della stessa famiglia. L’idea iniziale era semplice: dare ai due edifici una radice comune, senza pretendere che le persone che li avrebbero abitati dovessero vivere nello stesso modo.</p>
+<p>Per questo le case condividono l’immagine esterna, mentre all’interno prendono strade diverse. Distribuzione, arredamento e modo di usare gli spazi rispondono a due vite autonome.</p></div>
+</section>
+
+<section class="wrap section"><div class="grid">
+<div class="num">01</div>
+<div class="copy"><h2>Una somiglianza che non cerca di nascondersi.</h2>
+<p>Le due case sono volutamente gemelle. Stessa composizione, stessi materiali, stessi rapporti tra pieni e vuoti. Anche gli ingressi e le sistemazioni verso la strada costruiscono un fronte unitario.</p>
+<p>Non ci interessava differenziarle artificialmente per dimostrare che erano due progetti distinti. La loro relazione era il punto di partenza e poteva essere mostrata con naturalezza.</p>
+<div class="media"><img src="images/villa-m-m/facciata-giardino.jpg" alt="Una delle due case di Villa M|M vista dal giardino"><div class="caption">Una delle due abitazioni. Il linguaggio esterno è condiviso.</div></div></div>
+</div></section>
+
+<section class="wrap section"><div class="grid">
+<div class="num">02</div>
+<div class="copy"><h2>La villetta di città, riletta oggi.</h2>
+<p>Il terreno si trova in una zona residenziale della pianura reggiana ed era rimasto libero dagli anni Novanta. Il piano originario della lottizzazione immaginava qui quella tipologia di villetta borghese che ha costruito una parte importante dei quartieri residenziali delle nostre città.</p>
+<p>Non volevamo negare quel carattere, ma nemmeno ripeterlo in modo letterale. Abbiamo mantenuto l’idea della casa con il suo giardino, il tetto a falde, gli sporti e una presenza domestica riconoscibile, rileggendola con proporzioni, dettagli e materiali contemporanei.</p>
+<div class="media"><img src="images/villa-m-m/fronte-casa.jpg" alt="Villa M|M, fronte principale di una delle due abitazioni"><div class="caption">Una tipologia familiare reinterpretata senza trasformarla in una citazione.</div></div></div>
+</div></section>
+
+<section class="wrap section"><div class="grid">
+<div class="num">03</div>
+<div class="copy"><h2>Specchiate non significa uguali.</h2>
+<p>La simmetria appartiene soprattutto all’esterno. Una volta attraversata la soglia, ciascuna casa comincia a seguire chi la abita. Le distribuzioni non coincidono necessariamente, così come non coincidono gli arredi e il modo in cui gli spazi vengono vissuti.</p>
+<p>È un aspetto che ci interessa molto: l’architettura può dare una struttura comune senza imporre una vita comune. Due case possono avere la stessa faccia e raccontare, all’interno, storie completamente diverse.</p>
+<div class="split"><img src="images/villa-m-m/terrazze-specchiate.jpg" alt="Rapporto visivo tra le terrazze delle due case"><img src="images/villa-m-m/portico.jpg" alt="Portico e spazio esterno di una delle due case"></div></div>
+</div></section>
+
+<section class="statement"><div class="wrap inner">
+<div class="num">04</div>
+<div><blockquote>La somiglianza non è il contrario dell’identità.</blockquote>
+<p>In questo progetto le due cose convivono. Da fuori si legge immediatamente l’appartenenza a un unico disegno. Da dentro emerge invece ciò che cambia: le abitudini, gli oggetti, le scelte quotidiane e, con il tempo, le vite delle persone.</p>
+<p>Forse è proprio questa la parte più interessante di Villa M|M. Non aver cercato due architetture diverse per due famiglie diverse, ma aver lasciato che la differenza nascesse dove conta davvero: nel modo di abitare.</p></div>
+</div></section>
+
+<section class="wrap section">
+<div class="final-grid"><img src="images/villa-m-m/ingresso-1.jpg" alt="Ingresso pedonale della prima abitazione"><img src="images/villa-m-m/ingresso-2.jpg" alt="Ingresso pedonale della seconda abitazione"></div>
+<div class="caption">Due ingressi, lo stesso disegno. Poi, oltre la soglia, due case diverse.</div>
+</section>
+</main>
+
+<section class="bottom-nav">
+<a class="prev" href="progetto-padiglione-c.html"><div class="nav-label">PROGETTO PRECEDENTE</div><div class="nav-name">Padiglione C</div></a>
+<div class="dialogue"><p>Ogni progetto nasce da condizioni diverse.<br>Guarda tutte le case e le loro storie.</p><a href="progetti.html">TUTTI I PROGETTI →</a></div>
+<a class="next" href="progetti.html"><div class="nav-label">TORNA ALL’INDICE</div><div class="nav-name">Tutti i progetti</div></a>
+</section>
+
+<footer><div><b>SPAZIOLIBERO architettura</b><br>Progettare significa prima di tutto capire come una casa verrà abitata.</div><div>© SPAZIOLIBERO architettura<br>Parma, Italia</div></footer>
+</body></html>
