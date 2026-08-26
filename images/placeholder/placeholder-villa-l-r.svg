@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Placeholder fotografico per Villa L|R">
-<!-- PLACEHOLDER: sostituire con la foto reale del progetto "Villa L|R" (stesso nome file, formato .jpg/.webp consigliato) -->
-<rect width="800" height="1000" fill="#1a3443"/>
-<rect x="40" y="40" width="720" height="920" fill="none" stroke="#785843" stroke-width="2"/>
-<text x="400.0" y="470.0" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#785843" text-anchor="middle" letter-spacing="4">07</text>
-<text x="400.0" y="520.0" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#ffffff" text-anchor="middle">Villa L|R</text>
-<text x="400.0" y="560.0" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" fill-opacity="0.55" text-anchor="middle" letter-spacing="2">FOTO IN ARRIVO</text>
-</svg>
