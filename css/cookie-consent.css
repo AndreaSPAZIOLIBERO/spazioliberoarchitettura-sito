@@ -1,0 +1,51 @@
+/*
+ * Stili per il banner cookie (id="consentBanner"), estratti verbatim
+ * dal blocco <style> inline di conversazione-01.html (nessun valore
+ * modificato). Le classi del popup Informativa Privacy sono invece gia
+ * presenti in css/site.834515.css e non sono duplicate qui.
+ */
+
+@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 7";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:800;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 3";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:400}
+@font-face{font-display:block;font-family:"Poppins 4";src:url('css/Poppins-Bold.woff2') format('woff2'),url('css/Poppins-Bold.woff') format('woff');font-weight:700}
+@font-face{font-display:block;font-family:"Poppins 1";src:url('css/Poppins-Regular.woff2') format('woff2'),url('css/Poppins-Regular.woff') format('woff');font-weight:400}
+@font-face{font-display:block;font-family:"Outfit 8";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:900;font-style:normal}
+.btf{display:none}
+#consentBanner{position:fixed;bottom:0;z-index:2147483647}
+.v46{display:none;pointer-events:none}
+.s332{width:100%;width:calc(100% - var(--sw));min-width:1200px;min-height:265px}
+.c103{border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-color:#785843}
+.z222{z-index:49}
+.ps313{position:relative;margin-top:26px}
+.v39{display:block}
+.s333{width:1200px;margin-left:auto;margin-right:auto;min-height:212px}
+.v41{display:inline-block;vertical-align:top}
+.ps314{position:relative;margin-left:15px;margin-top:0}
+.s334{min-width:1170px;width:1170px;min-height:27px}
+.v42{display:inline-block;vertical-align:top;pointer-events:auto}
+.ps269{position:relative;margin-left:0;margin-top:0}
+.s335{min-width:756px;width:756px;overflow:hidden;height:27px}
+.p11{text-indent:0;padding-bottom:0;padding-right:0;text-align:left}
+.f134{font-family:"Outfit 4";font-size:14px;font-size:calc(14px * var(--f));line-height:1.787;font-weight:500;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#000;background-color:initial;text-shadow:none}
+.ps315{position:relative;margin-left:227px;margin-top:0}
+.s336{min-width:187px;width:187px;min-height:27px}
+.input5{width:14px;height:14px;margin-top:9px;vertical-align:top}
+.f157{margin-left:3px;max-width:170px;font-family:"Poppins 1";font-size:15px;line-height:normal;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#000;background-color:initial;text-shadow:none;text-indent:0;padding-bottom:0;padding-right:0;text-align:left;display:inline-block;overflow:hidden;vertical-align:middle;white-space:nowrap}
+.ps316{position:relative;margin-left:998px;margin-top:0}
+.ps317{position:relative;margin-left:998px;margin-top:0}
+.ps318{position:relative;margin-left:998px;margin-top:0}
+.v44{display:inline-block;vertical-align:top;pointer-events:auto;outline:0}
+.s337{min-width:1170px;width:1170px;min-height:40px}
+.ps319{position:relative;margin-left:15px;margin-top:37px}
+.ps320{position:relative;margin-left:594px;margin-top:0}
+.ps321{position:relative;margin-left:15px;margin-top:0}
+.s338{min-width:187px;height:40px;box-sizing:border-box;width:187px;padding-right:0}
+.c104{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:#fff;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-color:#000;transition:color 0.2s, border-color 0.2s, background-color 0.2s;transition-timing-function:linear}
+.f158{font-family:"Poppins 1";font-size:15px;font-size:calc(15px * var(--f));line-height:1.668;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;text-shadow:none;text-indent:0;padding-right:0;text-align:center;cursor:pointer;padding-top:8px;padding-bottom:7px}
+.f156{font-family:"Poppins 1";font-size:15px;font-size:calc(15px * var(--f));line-height:2.268;font-weight:400;font-style:normal;text-decoration:underline;text-transform:none;letter-spacing:normal;color:#000;background-color:initial;text-shadow:none}
+@media (min-width:960px) and (max-width:1199px) {.s332{min-width:960px;min-height:212px}.ps313{margin-top:21px}.s333{width:960px;min-height:169px}.ps314{margin-left:12px}.s334{min-width:936px;width:936px;min-height:22px}.s335{min-width:605px;width:605px;height:22px}.f134{font-size:11px;font-size:calc(11px * var(--f));line-height:1.728}.ps315{margin-left:181px}.s336{min-width:150px;width:150px;min-height:22px}.input5{margin-top:5px}.f157{max-width:133px;font-size:12px}.ps316{margin-left:798px;margin-top:-1px}.ps317{margin-left:798px}.ps318{margin-left:798px;margin-top:-1px}.s337{min-width:936px;width:936px;min-height:32px}.ps319{margin-left:12px;margin-top:29px}.ps320{margin-left:475px}.ps321{margin-left:11px}.s338{min-width:150px;height:32px;width:150px}.f158{font-size:12px;font-size:calc(12px * var(--f));line-height:1.584;padding-top:7px;padding-bottom:6px}.f156{font-size:12px;font-size:calc(12px * var(--f));line-height:2.334}}
+@media (min-width:768px) and (max-width:959px) {.s332{min-width:768px;min-height:170px}.ps313{margin-top:17px}.s333{width:768px;min-height:136px}.ps314{margin-left:10px}.s334{min-width:748px;width:748px;min-height:17px}.s335{min-width:484px;width:484px;height:17px}.f134{font-size:8px;font-size:calc(8px * var(--f));line-height:1.751}.ps315{margin-left:144px}.s336{min-width:120px;width:120px;min-height:17px}.input5{margin-top:2px}.f157{max-width:103px;font-size:9px}.ps316{margin-left:638px}.ps317{margin-left:638px;margin-top:1px}.ps318{margin-left:638px;margin-top:-1px}.s337{min-width:748px;width:748px;min-height:26px}.ps319{margin-left:10px;margin-top:24px}.ps320{margin-left:380px}.ps321{margin-left:8px}.s338{min-width:120px;height:26px;width:120px}.f158{font-size:9px;font-size:calc(9px * var(--f));padding-top:6px;padding-bottom:5px}.f156{font-size:9px;font-size:calc(9px * var(--f));line-height:2.334}}
+@media (min-width:480px) and (max-width:767px) {.s332{min-width:480px;min-height:106px}.ps313{margin-top:10px}.s333{width:480px;min-height:85px}.ps314{margin-left:7px}.s334{min-width:467px;width:467px;min-height:11px}.s335{min-width:302px;width:302px;height:11px}.f134{font-size:5px;font-size:calc(5px * var(--f));line-height:1.801}.ps315{margin-left:90px}.s336{min-width:75px;width:75px;min-height:14px}.input5{margin-top:0}.f157{max-width:58px;font-size:6px}.ps316{margin-left:399px}.ps317{margin-left:399px;margin-top:-3px}.ps318{margin-left:399px;margin-top:-4px}.s337{min-width:468px;width:468px;min-height:16px}.ps319{margin-left:6px;margin-top:12px}.ps320{margin-left:238px}.ps321{margin-left:5px}.s338{min-width:75px;height:16px;width:75px}.f158{font-size:6px;font-size:calc(6px * var(--f));padding-top:3px;padding-bottom:3px}.f156{font-size:6px;font-size:calc(6px * var(--f));line-height:2.168}}
+@media (max-width:479px) {.s332{min-width:320px;min-height:71px}.ps313{margin-top:7px}.s333{width:320px;min-height:57px}.ps314{margin-left:4px}.s334{min-width:312px;width:312px;min-height:7px}.s335{min-width:202px;width:202px;height:7px}.f134{font-size:4px;font-size:calc(4px * var(--f));line-height:1.751}.ps315{margin-left:60px}.s336{min-width:50px;width:50px;min-height:14px}.input5{margin-top:-2px}.f157{max-width:33px;font-size:4px}.ps316{margin-left:266px}.ps317{margin-left:266px;margin-top:-6px}.ps318{margin-left:266px;margin-top:-8px}.s337{min-width:312px;width:312px;min-height:11px}.ps319{margin-left:4px;margin-top:3px}.ps320{margin-left:159px}.ps321{margin-left:3px}.s338{min-width:50px;height:11px;width:50px}.f158{font-size:4px;font-size:calc(4px * var(--f));line-height:1.501;padding-top:3px;padding-bottom:2px}.f156{font-size:4px;font-size:calc(4px * var(--f));line-height:2.251}}
