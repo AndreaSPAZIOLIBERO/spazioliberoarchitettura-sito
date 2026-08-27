@@ -32,3 +32,9 @@ Per questi, mantenere i placeholder in progetti.html — non creare link verso p
 ## Altri vincoli fissi
 
 - Unica email ammessa nel sito: contatto@spazioliberoarchitettura.it
+
+## Header/footer
+
+Header/footer unificati su tutto il sito il 27/08/2026 — questa parte NON è
+più oggetto della regola "non ricostruire", il contenuto narrativo di
+ciascuna pagina resta invece invariato e approvato.
