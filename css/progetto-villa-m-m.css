@@ -1,0 +1,65 @@
+/* Villa M|M — allineato al sistema tipografico e di impaginazione di
+   Villa D|P (css/progetto-villa-dp-ei.css). Stessi valori, classi
+   indipendenti .mm-*: nessun testo, immagine o ordine narrativo è stato
+   toccato, solo il markup strutturale e lo stile delle sezioni numerate
+   01-03, della citazione (04) e della galleria finale. L'introduzione
+   dopo l'hero e il contenuto/link della barra prev-next+CTA restano sul
+   sistema esistente della pagina, fuori dal mandato di questo intervento.
+   Il blocco a tre colonne di D|P non ha un equivalente nel contenuto di
+   questa pagina (nessun elenco di tre concetti/dati nel testo esistente)
+   e non è stato aggiunto, per non inventare testo nuovo. */
+@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+
+:root{--max:1200px;--mm-tint:rgba(120,88,67,.16);--mm-faint:rgba(120,88,67,.01)}
+
+/* hero — tipografia fissa (era clamp fluido); la larghezza segue --max,
+   ora 1200px come il resto della pagina. Altezza, posizione del testo e
+   overlay dell'hero non sono stati toccati (non richiesti). */
+.hero h1{font-family:"Outfit 6",sans-serif;font-size:48px;line-height:1.05;font-weight:700}
+.hero p{font-family:"Outfit 4",sans-serif;font-size:30px;line-height:1.28;font-weight:500}
+
+.mm-wrap{width:1200px;margin:0 auto}
+
+/* righe di sezione 01/02/03 — testo+immagine affiancati, come .dp-row */
+.mm-row{width:100%;border-bottom:1px solid #000;background:var(--mm-faint);box-sizing:border-box}
+.mm-row:first-of-type{border-top:0}
+.mm-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;display:grid;gap:26px;align-items:start;box-sizing:border-box}
+.mm-row-a .mm-inner{grid-template-columns:352px 720px}
+.mm-row-b .mm-inner{grid-template-columns:720px 345px;gap:33px}
+.mm-copy{font-family:"Outfit 4",sans-serif;color:#111}
+.mm-num{font-size:12px;line-height:1.75;font-weight:500;margin:0 0 8px;color:#111}
+.mm-copy h2{font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;margin:0 0 14px}
+.mm-copy p{font-size:14px;line-height:1.78;font-weight:500;margin:0 0 10px}
+.mm-media img{display:block;width:100%;height:auto}
+.mm-media .caption{font-family:"Outfit 4",sans-serif}
+.mm-media.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* citazione (04) — soluzione ibrida concordata: numero discreto 12px
+   come nelle altre sezioni + testo a piena larghezza su sfondo tint,
+   32px/700 per creare un contrasto di scala reale rispetto ai titoli
+   di sezione (24px/700), dato che il numero "04" (testo esistente) non
+   può essere rimosso come invece accade in .dp-quote. */
+.mm-quote{width:100%;border-bottom:1px solid #000;background:var(--mm-tint);box-sizing:border-box;padding:54px 0}
+.mm-quote-inner{width:1098px;margin:0 0 0 12px}
+.mm-quote blockquote{font-family:"Outfit 6",sans-serif;font-size:32px;line-height:1.25;font-weight:700;margin:0 0 18px;max-width:900px}
+.mm-quote p{font-family:"Outfit 4",sans-serif;font-size:14px;line-height:1.78;font-weight:500;max-width:760px;margin:0 0 10px}
+
+/* galleria finale — didascalia esistente spostata sopra la griglia e
+   allineata alla tipografia di .dp-gallery-num, nessun testo nuovo */
+.mm-gallery{width:100%;border-bottom:1px solid #000;background:var(--mm-faint);box-sizing:border-box;padding:36px 0}
+.mm-gallery-inner{width:1098px;margin:0 0 0 12px}
+.mm-gallery-cap{font-family:"Outfit 4",sans-serif;font-size:12px;line-height:1.75;margin:0 0 18px;color:#111}
+.mm-gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mm-gallery-grid img{display:block;width:100%;height:auto}
+
+@media(max-width:1199px){
+  .mm-wrap{width:100%}
+  .mm-inner,.mm-quote-inner,.mm-gallery-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}
+}
+@media(max-width:900px){
+  .mm-row-a .mm-inner,.mm-row-b .mm-inner{grid-template-columns:1fr;gap:18px}
+  .mm-row-b .mm-media{order:2}.mm-row-b .mm-copy{order:1}
+  .mm-media.split{grid-template-columns:1fr}
+  .mm-gallery-grid{grid-template-columns:1fr}
+}
