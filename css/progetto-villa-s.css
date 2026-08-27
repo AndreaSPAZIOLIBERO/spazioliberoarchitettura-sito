@@ -1,0 +1,52 @@
+/* Villa S — pagina nuova, costruita seguendo il sistema grafico di
+   Villa D|P (css/progetto-villa-dp-ei.css). Classi indipendenti .vs-*
+   che duplicano gli stessi valori esatti di tipografia, spaziatura,
+   wrapper, divisori e alternanza sfondi tint/faint di D|P — stessa
+   convenzione già usata per Padiglione C e Villa M|M. Nessun blocco a
+   tre colonne (il documento editoriale non ne prevede uno). */
+@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+
+:root{--vs-tint:rgba(120,88,67,.16);--vs-faint:rgba(120,88,67,.01)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit 4",Arial,sans-serif;color:#000}
+img{display:block;max-width:100%;height:auto}
+
+.vs-wrap{width:1200px;margin:0 auto}
+
+/* apertura — titolo, sottotitolo, introduzione. Il documento editoriale
+   non prevede un'immagine per questo blocco (nessuna riga IMMAGINE),
+   quindi resta testo puro, a differenza dell'hero fotografico di D|P. */
+.vs-open{border-bottom:1px solid #000;box-sizing:border-box}
+.vs-open-inner{width:1098px;margin:0 0 0 12px;padding:64px 0 56px;box-sizing:border-box}
+.vs-open h1{font-family:"Outfit 6",sans-serif;font-size:48px;line-height:1.05;font-weight:700;margin:0 0 16px}
+.vs-open .vs-sub{font-family:"Outfit 4",sans-serif;font-size:30px;line-height:1.28;font-weight:500;margin:0 0 32px;max-width:700px}
+.vs-open .vs-intro{max-width:760px}
+.vs-open .vs-intro p{font-family:"Outfit 4",sans-serif;font-size:18px;line-height:1.6;font-weight:500;margin:0 0 14px}
+
+/* righe di sezione — testo+immagine affiancati, come .dp-row-01/.dp-row-02 */
+.vs-row{width:100%;border-bottom:1px solid #000;background:var(--vs-faint);box-sizing:border-box}
+.vs-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;display:grid;gap:26px;align-items:start;box-sizing:border-box}
+.vs-row-a .vs-inner{grid-template-columns:352px 720px}
+.vs-row-b .vs-inner{grid-template-columns:720px 345px;gap:33px}
+.vs-copy{font-family:"Outfit 4",sans-serif;color:#000}
+.vs-num{font-size:12px;line-height:1.75;font-weight:500;margin:0 0 8px;color:#000}
+.vs-copy h2{font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;margin:0 0 14px}
+.vs-copy p{font-size:14px;line-height:1.78;font-weight:500;margin:0 0 10px}
+.vs-copy strong{font-family:"Outfit 6",sans-serif;font-weight:700}
+.vs-media img{display:block;width:100%;height:auto}
+.vs-media.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+@media(max-width:1199px){
+  .vs-wrap{width:100%}
+  .vs-open-inner,.vs-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}
+}
+@media(max-width:900px){
+  .vs-open h1{font-size:38px}
+  .vs-open .vs-sub{font-size:24px}
+  .vs-row-a .vs-inner,.vs-row-b .vs-inner{grid-template-columns:1fr;gap:18px}
+  .vs-row-b .vs-media{order:2}.vs-row-b .vs-copy{order:1}
+  .vs-media.pair{grid-template-columns:1fr}
+}
