@@ -1,0 +1,68 @@
+/* Villa L|R — pagina nuova, costruita seguendo il sistema grafico di
+   Villa D|P (css/progetto-villa-dp-ei.css). Classi indipendenti .lr-*
+   che duplicano gli stessi valori esatti di tipografia, spaziatura,
+   wrapper, hero, divisori e alternanza sfondi tint/faint di D|P —
+   stessa convenzione già usata per Villa S, Padiglione C e Villa M|M.
+   I testi/struttura/assegnazione immagini derivano da un documento
+   editoriale esterno; solo lo stile è stato ricostruito da zero.
+   .lr-row-full è una variante impilata (immagine sopra, testo sotto)
+   dello stesso contenitore .lr-row/.lr-inner, per le sezioni 01/02 che
+   nel documento non seguono lo schema affiancato di .dp-row-01/02. */
+@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+
+:root{--lr-tint:rgba(120,88,67,.16);--lr-faint:rgba(120,88,67,.01)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit 4",Arial,sans-serif;color:#000}
+img{display:block;max-width:100%;height:auto}
+
+.lr-wrap{width:1200px;margin:0 auto}
+
+/* hero fotografico — duplica esattamente .dp-hero */
+.lr-hero{position:relative;width:1200px;height:480px;margin:0 auto;border-top:1px solid #000;border-bottom:1px solid #000;overflow:hidden}
+.lr-hero img{width:100%;height:100%;object-fit:cover;object-position:center 53%;display:block}
+.lr-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.48) 0,rgba(0,0,0,.15) 38%,rgba(0,0,0,0) 62%);pointer-events:none}
+.lr-hero-copy{position:absolute;left:12px;top:118px;width:470px;color:#fff;z-index:1}
+.lr-hero h1{font-family:"Outfit 6",sans-serif;font-weight:700;font-size:48px;line-height:1.05;margin:0 0 12px}
+.lr-hero p{font-family:"Outfit 4",sans-serif;font-weight:500;font-size:30px;line-height:1.28;margin:0;max-width:430px}
+
+/* introduzione — testo pieno dopo l'hero, come .vs-open .vs-intro */
+.lr-intro{width:100%;border-bottom:1px solid #000;background:var(--lr-faint);box-sizing:border-box}
+.lr-intro-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;box-sizing:border-box}
+.lr-intro-inner p{font-family:"Outfit 4",sans-serif;font-size:18px;line-height:1.6;font-weight:500;margin:0;max-width:760px}
+
+/* righe di sezione affiancate — testo+immagine, come .dp-row-01/.dp-row-02 */
+.lr-row{width:100%;border-bottom:1px solid #000;background:var(--lr-faint);box-sizing:border-box}
+.lr-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;display:grid;gap:26px;align-items:start;box-sizing:border-box}
+.lr-row-a .lr-inner{grid-template-columns:352px 720px}
+.lr-row-b .lr-inner{grid-template-columns:720px 345px;gap:33px}
+.lr-copy{font-family:"Outfit 4",sans-serif;color:#000}
+.lr-num{font-size:12px;line-height:1.75;font-weight:500;margin:0 0 8px;color:#000}
+.lr-copy h2{font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;margin:0 0 14px}
+.lr-copy p{font-size:14px;line-height:1.78;font-weight:500;margin:0 0 10px}
+.lr-copy strong{font-family:"Outfit 6",sans-serif;font-weight:700}
+.lr-media img{display:block;width:100%;height:auto}
+.lr-media.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* righe a piena larghezza (01/02) — immagine (singola o coppia) sopra,
+   testo sotto in colonna di lettura ridotta */
+.lr-row-full .lr-inner{display:block}
+.lr-row-full .lr-media{margin:0 0 26px}
+.lr-row-full .lr-copy{max-width:760px}
+
+@media(max-width:1199px){
+  .lr-wrap{width:100%}
+  .lr-hero{width:100%}
+  .lr-intro-inner,.lr-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}
+}
+@media(max-width:900px){
+  .lr-hero{height:auto;aspect-ratio:4/3}
+  .lr-hero-copy{left:20px;right:20px;top:auto;bottom:24px;width:auto}
+  .lr-hero h1{font-size:34px}
+  .lr-hero p{font-size:22px}
+  .lr-row-a .lr-inner,.lr-row-b .lr-inner{grid-template-columns:1fr;gap:18px}
+  .lr-row-b .lr-media{order:2}.lr-row-b .lr-copy{order:1}
+  .lr-media.pair{grid-template-columns:1fr}
+}
