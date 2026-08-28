@@ -9,3 +9,18 @@ body > .ps181{margin-top:-2624px}
 @media(max-width:959px) and (min-width:768px){body > .ps181{margin-top:-1679px}}
 @media(max-width:767px) and (min-width:480px){body > .ps181{margin-top:-869px}}
 @media(max-width:479px){body > .ps181{margin-top:-580px}}
+
+/* Navigazione progetto precedente/successivo — stile D|P (css/progetto-villa-dp-ei.css),
+   scoped con classi proprie perché questa pagina non è ancora sul sistema .dp-*.
+   Nessuna pagina precedente per Villa E|I (prima della sequenza): la cella sinistra
+   resta un <div></div> vuoto e la griglia collassa a una colonna. */
+.ei-projnav{width:100%;border-bottom:1px solid #000;background:rgba(120,88,67,.01);box-sizing:border-box}
+.ei-projnav-inner{width:1098px;margin:0 0 0 12px;padding:28px 0;display:grid;grid-template-columns:1fr 1fr;box-sizing:border-box;font-family:"Outfit 4",sans-serif}
+.ei-projnav-inner:has(>div:empty){grid-template-columns:1fr}
+.ei-projnav-prev,.ei-projnav-next{font-family:"Outfit 4",sans-serif;color:#000;text-decoration:none;display:block}
+.ei-projnav-next{text-align:right;border-left:1px solid #000;padding-left:24px}
+.ei-projnav-inner:has(>div:empty) .ei-projnav-next{border-left:0;padding-left:0}
+.ei-projnav-label{font-size:12px;line-height:1.75;font-weight:500;letter-spacing:.04em}
+.ei-projnav-name{font-family:"Outfit 6",sans-serif;font-size:22px;line-height:1.3;font-weight:700;margin-top:6px}
+@media(max-width:1199px){.ei-projnav-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}}
+@media(max-width:900px){.ei-projnav-inner{grid-template-columns:1fr;gap:18px}.ei-projnav-next{border-left:0;padding-left:0;text-align:left;border-top:1px solid #000;padding-top:18px}}

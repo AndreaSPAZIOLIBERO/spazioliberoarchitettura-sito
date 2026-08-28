@@ -17,10 +17,9 @@ header{height:86px;border-bottom:1px solid #111;display:flex;align-items:center}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}.split img{height:520px;object-fit:cover}
 .statement{background:var(--soft);padding:84px 0}.statement .inner{display:grid;grid-template-columns:130px 1fr;gap:48px}.statement blockquote{font-size:clamp(30px,3.4vw,50px);line-height:1.15;font-weight:420;margin:0;max-width:900px}.statement p{font-size:18px;line-height:1.7;max-width:760px;margin:30px 0 0}
 .final-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.final-grid img{height:560px;object-fit:cover}.final-grid img:last-child{object-position:center}
-.bottom-nav{width:min(var(--max),calc(100% - 64px));margin:30px auto 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fafafa;display:grid;grid-template-columns:1fr 1.5fr 1fr}.prev,.next{padding:22px 28px}.prev{border-right:1px solid #ddd}.next{border-left:1px solid #ddd;text-align:right}.nav-label{font-size:10px;letter-spacing:.7px}.nav-name{font-size:22px;margin-top:7px}.dialogue{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;gap:30px}.dialogue p{font-size:18px;line-height:1.3;margin:0}.dialogue a{background:#000;color:#fff;border:1px solid #000;padding:15px 22px;font-size:13px}
 footer{width:min(var(--max),calc(100% - 64px));margin:auto;padding:32px 0 44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;font-size:12px;line-height:1.55}
-@media(max-width:900px){nav{gap:20px}.intro{grid-template-columns:150px 1fr}.split{grid-template-columns:1fr}.split img{height:auto}.final-grid{grid-template-columns:1fr}.bottom-nav{grid-template-columns:1fr 1fr}.dialogue{grid-column:1/-1;order:3;border-top:1px solid #ddd}}
-@media(max-width:760px){header{height:auto;padding:20px 0}.header-in,.hero,.bottom-nav,footer{width:calc(100% - 32px)}nav{display:none}.hero{margin-top:16px;min-height:72vh}.hero img{height:72vh;object-position:center}.hero-copy{left:24px;right:24px;bottom:30px}.wrap{width:calc(100% - 32px)}.intro{grid-template-columns:1fr;gap:20px;padding:44px 0}.grid,.statement .inner{grid-template-columns:1fr;gap:20px}.section{padding:48px 0}.num{font-size:42px}.intro p,.copy p,.statement p{font-size:17px}.media{margin-top:30px}.media img{max-height:none}.split{margin-top:30px}.statement{padding:54px 0}.final-grid img{height:auto}.bottom-nav{grid-template-columns:1fr}.prev,.next{border:0;border-bottom:1px solid #ddd;text-align:left}.dialogue{display:block;padding:22px}.dialogue p{margin-bottom:18px}.dialogue a{display:inline-block}footer{grid-template-columns:1fr;gap:16px}}
+@media(max-width:900px){nav{gap:20px}.intro{grid-template-columns:150px 1fr}.split{grid-template-columns:1fr}.split img{height:auto}.final-grid{grid-template-columns:1fr}}
+@media(max-width:760px){header{height:auto;padding:20px 0}.header-in,.hero,footer{width:calc(100% - 32px)}nav{display:none}.hero{margin-top:16px;min-height:72vh}.hero img{height:72vh;object-position:center}.hero-copy{left:24px;right:24px;bottom:30px}.wrap{width:calc(100% - 32px)}.intro{grid-template-columns:1fr;gap:20px;padding:44px 0}.grid,.statement .inner{grid-template-columns:1fr;gap:20px}.section{padding:48px 0}.num{font-size:42px}.intro p,.copy p,.statement p{font-size:17px}.media{margin-top:30px}.media img{max-height:none}.split{margin-top:30px}.statement{padding:54px 0}.final-grid img{height:auto}footer{grid-template-columns:1fr;gap:16px}}
 </style>
 <link href="css/site-header.css" rel="stylesheet"><link href="css/site-footer.css" rel="stylesheet">
 <style>
@@ -80,14 +79,16 @@ body>footer:not(.sl-site-footer){display:none!important}
 <div class="mm-gallery-cap">Due ingressi, lo stesso disegno. Poi, oltre la soglia, due case diverse.</div>
 <div class="mm-gallery-grid"><img src="images/villa-m-m/ingresso-1.jpg" alt="Ingresso pedonale della prima abitazione"><img src="images/villa-m-m/ingresso-2.jpg" alt="Ingresso pedonale della seconda abitazione"></div>
 </div></section>
+<section class="mm-cta"><div class="mm-cta-inner">
+<p>Ogni progetto nasce da condizioni diverse.<br>Guarda tutte le case e le loro storie.</p>
+<a href="mailto:contatto@spazioliberoarchitettura.it?subject=Richiesta%20di%20primo%20incontro%20progettuale">FISSIAMO UNA CONVERSAZIONE</a>
+</div></section>
+<section class="mm-projnav"><div class="mm-projnav-inner">
+<a class="mm-projnav-prev" href="progetto-villa-l-r.html"><div class="mm-projnav-label">PROGETTO PRECEDENTE</div><div class="mm-projnav-name">← Villa L|R</div></a>
+<a class="mm-projnav-next" href="progetto-casa-r-d.html"><div class="mm-projnav-label">PROGETTO SUCCESSIVO</div><div class="mm-projnav-name">Casa R|D →</div></a>
+</div></section>
 </div>
 </main>
-
-<section class="bottom-nav">
-<a class="prev" href="progetto-padiglione-c.html"><div class="nav-label">PROGETTO PRECEDENTE</div><div class="nav-name">Padiglione C</div></a>
-<div class="dialogue"><p>Ogni progetto nasce da condizioni diverse.<br>Guarda tutte le case e le loro storie.</p><a href="mailto:contatto@spazioliberoarchitettura.it?subject=Richiesta%20di%20primo%20incontro%20progettuale">FISSIAMO UNA CONVERSAZIONE</a></div>
-<a class="next" href="progetti.html"><div class="nav-label">TORNA ALL’INDICE</div><div class="nav-name">Tutti i progetti</div></a>
-</section>
 
 <footer class="sl-site-footer" role="contentinfo">
 <div><div class="sl-site-footer__brand">SPAZIOLIBERO architettura</div><div class="sl-site-footer__meta">di Ravagli Andrea e Sancisi Maddalena<br/>Parma, Viale delle Rimembranze 36.<br/>P. IVA 02237840349</div></div>
