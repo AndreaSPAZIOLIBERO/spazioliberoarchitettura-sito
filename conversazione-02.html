@@ -16,7 +16,31 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-web
 <link href="css/site.834515.css" media="print" onload="this.media='all';this.onload=null;" rel="stylesheet"/>
 <noscript><link href="css/site.834515.css" rel="stylesheet" type="text/css"/></noscript>
 <link href="css/responsive-system.css" rel="stylesheet"/>
-<link href="css/site-header.css" rel="stylesheet"/><link href="css/site-footer.css" rel="stylesheet"/></head>
+<link href="css/site-header.css" rel="stylesheet"/><link href="css/site-footer.css" rel="stylesheet"/>
+<style>
+/* box "conversazione precedente / prossima conversazione", desktop —
+   sostituisce il vecchio blocco legacy a due colonne "LEGGILA __>>".
+   Stile coerente con .prev/.nextlink usato su conversazione-03/04/05,
+   classi proprie per lo stesso motivo di conversazione-01 (sistema
+   Sitely). Il reader mobile (.slmr-cta, sotto i 768px, con lo stesso
+   prev+next) non è toccato da questa modifica. A differenza del box
+   analogo di conversazione-01 (figlio diretto di body, già nascosto
+   sotto i 767px dalla regola sitewide body.sl-has-mobile-reader > div),
+   qui il punto d'inserimento è annidato più in profondità: la regola
+   sitewide non lo raggiunge, quindi il nascondimento sotto i 767px è
+   esplicito qui sotto. */
+.c02-nextlink-bar{width:1200px;margin:26px auto 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fafafa;display:grid;grid-template-columns:1fr 1fr}
+.c02-navlink{display:block;padding:22px 28px;font-family:"Outfit 4",Arial,sans-serif;color:#000;text-decoration:none}
+.c02-nl-next{border-left:1px solid #ddd;text-align:right}
+.c02-nl-label{font-size:10px;letter-spacing:.6px;font-family:"Outfit 4",Arial,sans-serif}
+.c02-nl-row{display:flex;align-items:center;gap:16px;margin-top:9px}
+.c02-nl-next .c02-nl-row{justify-content:flex-end}
+.c02-nl-n{font-size:30px;font-family:"Outfit 6",Arial,sans-serif;font-weight:700}
+.c02-nl-copy{font-size:11px;line-height:1.35;font-family:"Outfit 4",Arial,sans-serif}
+@media(max-width:1199px){.c02-nextlink-bar{width:calc(100% - 64px)}}
+@media(max-width:767px){.c02-nextlink-bar{display:none!important}}
+</style>
+</head>
 <body class="sl-has-mobile-reader" id="b" style="--sw:0px"><div class="sl-site-header" role="banner"><div class="sl-site-header__inner"><a aria-label="SPAZIOLIBERO architettura — Home" class="sl-site-brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><nav aria-label="Navigazione principale" class="sl-site-nav"><a href="progetti.html">PROGETTI</a><a aria-current="page" href="indice-conversazioni.html">CONVERSAZIONI</a><a href="primo-incontro.html">DA DOVE COMINCIA UN PROGETTO</a><a href="studio.html">LO STUDIO</a><a href="mailto:contatto@spazioliberoarchitettura.it">CONTATTI</a></nav><details class="sl-site-menu"><summary aria-label="Apri il menu"><span></span></summary><nav aria-label="Navigazione mobile"><a href="index.html">Home</a><a href="progetti.html">Progetti</a><a aria-current="page" href="indice-conversazioni.html">Conversazioni</a><a href="primo-incontro.html">Da Dove Comincia Un Progetto</a><a href="studio.html">Lo studio</a><a href="mailto:contatto@spazioliberoarchitettura.it">Contatti</a></nav></details></div></div><header class="sl-mobile-header"><div class="sl-mobile-header__inner"><a class="sl-mobile-brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><details class="sl-mobile-menu"><summary aria-label="Apri il menu"></summary><nav aria-label="Navigazione mobile"><a href="index.html">Home</a><a href="progetti.html">Progetti</a><a href="indice-conversazioni.html">Conversazioni</a><a href="primo-incontro.html">Da dove comincia un progetto</a><a href="mailto:contatto@spazioliberoarchitettura.it">Contatti</a></nav></details></div></header><main class="sl-mobile-reader">
 <section class="slmr-hero"><div class="slmr-kicker">CONVERSAZIONE 02</div><h1>Quando è la luce a scegliere il colore.</h1><p class="slmr-dek">La stessa stanza può cambiare molto più di quanto immaginiamo.</p></section>
 <section class="slmr-section"><p>Quando si parla di colori, quasi sempre ci si ritrova davanti a una mazzetta. Eppure, quando quella casa sarà costruita, nessuno vedrà mai quei colori da soli: li vedrà insieme alla luce, al pavimento, al legno, ai tessuti, agli arredi e al giardino oltre la finestra.</p><p>Per questo, durante un progetto, non scegliamo il colore di una parete. Cerchiamo l’equilibrio di uno spazio.</p></section>
@@ -200,24 +224,7 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-web
 </div>
 <div class="v51 ps358 s369 c114 z251"></div>
 <div class="v51 ps359 s369 c114 z252"></div>
-<div class="v51 ps360 s370">
-<div class="v52 ps361 s371 c112 z253">
-<h2 class="p13"><a href="conversazione-01.html" role="button"><span class="f181">Pr</span><span class="f181">ecedente </span><span class="f181">conversazione</span></a></h2>
-<h2 class="p13"><a class="f181" href="conversazione-01.html" role="button"><br/></a></h2>
-<h2 class="p13"><a href="conversazione-01.html" role="button"><span class="f182">0</span><span class="f182">1</span><span class="f181">-</span><span class="f181">Scelte</span></a></h2>
-<p class="p13"><a href="conversazione-01.html" role="button"><span class="f183">Come scegliere l’architetto per la propria casa</span><span class="f183">.</span></a></p>
-<p class="p13"><a class="f183" href="conversazione-01.html" role="button"><br/></a></p>
-<p class="p13"><a class="f184" href="conversazione-01.html" role="button">LEGGILA __&gt;&gt;</a></p>
-</div>
-<div class="v52 ps362 s371 c112 z254">
-<h2 class="p13"><a class="f169" href="conversazione-03.html" role="button">Prossima conversazione</a></h2>
-<h2 class="p13"><a class="f169" href="conversazione-03.html" role="button"><br/></a></h2>
-<h2 class="p13"><a href="conversazione-03.html" role="button"><span class="f185">03</span><span class="f169">-Comfort</span></a></h2>
-<p class="p13"><a class="f168" href="conversazione-03.html" role="button">Il comfort non è solo una questione di temperatura.</a></p>
-<p class="p13"><a class="f168" href="conversazione-03.html" role="button"><br/></a></p>
-<p class="p13"><a class="f180" href="conversazione-03.html" role="button">LEGGILA __&gt;&gt;</a></p>
-</div>
-</div>
+<div class="c02-nextlink-bar"><a class="c02-navlink" href="conversazione-01.html"><div class="c02-nl-label">CONVERSAZIONE PRECEDENTE</div><div class="c02-nl-row"><div class="c02-nl-arrow">←</div><div class="c02-nl-n">01</div><div class="c02-nl-copy">Scelte<br/>Come scegliere l’architetto per la propria casa.</div></div></a><a class="c02-navlink c02-nl-next" href="conversazione-03.html"><div class="c02-nl-label">PROSSIMA CONVERSAZIONE</div><div class="c02-nl-row"><div class="c02-nl-n">03</div><div class="c02-nl-copy">Comfort<br/>Il comfort non è solo una questione di temperatura.</div><div class="c02-nl-arrow">→</div></div></a></div>
 </div>
 <div class="v51 ps363 s372 z255">
 <div class="v52 ps332 s373 c112">

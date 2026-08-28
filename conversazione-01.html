@@ -16,7 +16,26 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-web
 <link href="css/site.834515.css" media="print" onload="this.media='all';this.onload=null;" rel="stylesheet"/>
 <noscript><link href="css/site.834515.css" rel="stylesheet" type="text/css"/></noscript>
 <link href="css/responsive-system.css" rel="stylesheet"/>
-<link href="css/site-header.css" rel="stylesheet"/><link href="css/site-footer.css" rel="stylesheet"/></head>
+<link href="css/site-header.css" rel="stylesheet"/><link href="css/site-footer.css" rel="stylesheet"/>
+<style>
+/* box "prossima conversazione", desktop — sostituisce il vecchio blocco
+   legacy "LEGGILA __>>". Stile coerente con .nextlink usato su
+   conversazione-03/04/05, ma con classi proprie perché questa pagina usa
+   un sistema di markup/CSS completamente diverso (Sitely). È un div
+   figlio diretto di body: sotto i 767px viene già nascosto dalla regola
+   sitewide body.sl-has-mobile-reader > div:not(...) in
+   css/responsive-system.css, la stessa che nasconde tutto il contenuto
+   desktop lasciando visibile solo <main class="sl-mobile-reader">
+   (che contiene .slmr-cta, non toccato da questa modifica). */
+.c01-nextlink-bar{width:1200px;margin:26px auto 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fafafa}
+.c01-nextlink{display:block;padding:22px 28px;text-align:right;font-family:"Outfit 4",Arial,sans-serif;color:#000;text-decoration:none}
+.c01-nl-label{font-size:10px;letter-spacing:.6px;font-family:"Outfit 4",Arial,sans-serif}
+.c01-nl-row{display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-top:9px}
+.c01-nl-n{font-size:30px;font-family:"Outfit 6",Arial,sans-serif;font-weight:700}
+.c01-nl-copy{font-size:11px;line-height:1.35;font-family:"Outfit 4",Arial,sans-serif}
+@media(max-width:1199px){.c01-nextlink-bar{width:calc(100% - 64px)}}
+</style>
+</head>
 <body class="sl-has-mobile-reader" id="b" style="--sw:0px"><div class="sl-site-header" role="banner"><div class="sl-site-header__inner"><a aria-label="SPAZIOLIBERO architettura — Home" class="sl-site-brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><nav aria-label="Navigazione principale" class="sl-site-nav"><a href="progetti.html">PROGETTI</a><a aria-current="page" href="indice-conversazioni.html">CONVERSAZIONI</a><a href="primo-incontro.html">DA DOVE COMINCIA UN PROGETTO</a><a href="studio.html">LO STUDIO</a><a href="mailto:contatto@spazioliberoarchitettura.it">CONTATTI</a></nav><details class="sl-site-menu"><summary aria-label="Apri il menu"><span></span></summary><nav aria-label="Navigazione mobile"><a href="index.html">Home</a><a href="progetti.html">Progetti</a><a aria-current="page" href="indice-conversazioni.html">Conversazioni</a><a href="primo-incontro.html">Da Dove Comincia Un Progetto</a><a href="studio.html">Lo studio</a><a href="mailto:contatto@spazioliberoarchitettura.it">Contatti</a></nav></details></div></div><header class="sl-mobile-header"><div class="sl-mobile-header__inner"><a class="sl-mobile-brand" href="index.html"><b>SPAZIOLIBERO</b><span>architettura</span></a><details class="sl-mobile-menu"><summary aria-label="Apri il menu"></summary><nav aria-label="Navigazione mobile"><a href="index.html">Home</a><a href="progetti.html">Progetti</a><a href="indice-conversazioni.html">Conversazioni</a><a href="primo-incontro.html">Da dove comincia un progetto</a><a href="mailto:contatto@spazioliberoarchitettura.it">Contatti</a></nav></details></div></header><main class="sl-mobile-reader">
 <section class="slmr-hero"><div class="slmr-kicker">CONVERSAZIONE 01</div><h1>Come scegliere l’architetto per la propria casa.</h1><p class="slmr-dek">State scegliendo le case che un architetto ha già progettato, o il modo in cui progetterà la vostra?</p></section>
 <section class="slmr-section"><p>Quando si cerca un architetto, la prima cosa che viene naturale fare è guardare i suoi progetti. Lo farei probabilmente anch’io. Si guardano le fotografie, si cerca di capire se quelle case ci piacciono, se ci riconosciamo in quegli spazi, nei materiali, nella luce, nel modo in cui sono state costruite.</p><p>È un modo del tutto comprensibile per iniziare una ricerca, ma non sono sicuro che sia sufficiente per scegliere.</p><p>Una casa che vedete fotografata è il risultato di un percorso che non conoscete. Soprattutto, quella casa è stata progettata per qualcun altro. La vostra non esiste ancora.</p></section>
@@ -163,13 +182,12 @@ html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-web
 <div class="v42 ps291 s310 c97 z200">
 <p class="p11 f142">Prendersi il tempo di capire bene oggi significa evitare decisioni affrettate domani</p>
 </div>
-<div class="v42 ps292 s311 z201">
-<a href="conversazione-02.html" style="display:block"><div class="v43 ps269 s312 c99 z202"></div><div class="v41 ps293 s313 c97 z203"><h2 class="p11 f135">Prossima conversazione</h2><h2 class="p11 f135"><br/></h2><h2 class="p11 f143">02<span class="f135">-Co</span><span class="f135">lore</span></h2><p class="p11 f134">Quando è la luce a scegliere il colore<span class="f134">.</span></p><p class="p11 f134"><br/></p><p class="p11 f142">LEGGILA __&gt;&gt;</p></div></a>
+
 </div>
 </div>
 </div>
 </div>
-</div>
+<div class="c01-nextlink-bar"><a class="c01-nextlink" href="conversazione-02.html"><div class="c01-nl-label">PROSSIMA CONVERSAZIONE</div><div class="c01-nl-row"><div class="c01-nl-n">02</div><div class="c01-nl-copy">Colore<br/>Quando è la luce a scegliere il colore.</div><div class="c01-nl-arrow">→</div></div></a></div>
 <div class="v39 ps294 s314 c98 z204" data-block-group="0">
 <div class="ps264">
 </div>
