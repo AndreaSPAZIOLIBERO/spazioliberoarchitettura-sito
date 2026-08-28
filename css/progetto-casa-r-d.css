@@ -80,3 +80,15 @@ img{display:block;max-width:100%;height:auto}
   .rd-row-b .rd-media{order:2}.rd-row-b .rd-copy{order:1}
   .rd-media.pair{grid-template-columns:1fr}
 }
+
+/* Navigazione progetto precedente/successivo — riusa i token del sistema D|P */
+.rd-projnav{width:100%;border-bottom:1px solid #000;background:var(--rd-faint);box-sizing:border-box}
+.rd-projnav-inner{width:1098px;margin:0 0 0 12px;padding:28px 0;display:grid;grid-template-columns:1fr 1fr;box-sizing:border-box}
+.rd-projnav-inner:has(>div:empty){grid-template-columns:1fr}
+.rd-projnav-prev,.rd-projnav-next{font-family:"Outfit 4",sans-serif;color:#000;text-decoration:none;display:block}
+.rd-projnav-next{text-align:right;border-left:1px solid #000;padding-left:24px}
+.rd-projnav-inner:has(>div:empty) .rd-projnav-next{border-left:0;padding-left:0}
+.rd-projnav-label{font-size:12px;line-height:1.75;font-weight:500;letter-spacing:.04em}
+.rd-projnav-name{font-family:"Outfit 6",sans-serif;font-size:22px;line-height:1.3;font-weight:700;margin-top:6px}
+@media(max-width:1199px){.rd-projnav-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}}
+@media(max-width:900px){.rd-projnav-inner{grid-template-columns:1fr;gap:18px}.rd-projnav-next{border-left:0;padding-left:0;text-align:left;border-top:1px solid #000;padding-top:18px}}
