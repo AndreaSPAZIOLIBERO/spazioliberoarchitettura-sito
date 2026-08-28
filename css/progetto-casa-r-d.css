@@ -1,0 +1,82 @@
+/* Casa R|D — pagina nuova, costruita seguendo il sistema grafico di
+   Villa D|P (css/progetto-villa-dp-ei.css). Classi indipendenti .rd-*
+   che duplicano gli stessi valori esatti di tipografia, spaziatura,
+   wrapper, hero, divisori e sfondo faint di D|P — stessa convenzione
+   già usata per Villa L|R, Villa S, Padiglione C e Villa M|M.
+   .rd-row-full è la stessa variante impilata (immagine sopra, testo
+   sotto) introdotta per Villa L|R, qui riusata anche in versione
+   solo-testo (sezioni 01/04, senza immagine assegnata nel documento
+   editoriale) e con un blocco immagine aggiuntivo dopo il testo
+   (sezione 02, foto dell'incontro tra i volumi, separata dal
+   confronto prima/dopo). */
+@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+
+:root{--rd-tint:rgba(120,88,67,.16);--rd-faint:rgba(120,88,67,.01)}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Outfit 4",Arial,sans-serif;color:#000}
+img{display:block;max-width:100%;height:auto}
+
+.rd-wrap{width:1200px;margin:0 auto}
+
+/* hero fotografico — duplica esattamente .dp-hero */
+.rd-hero{position:relative;width:1200px;height:480px;margin:0 auto;border-top:1px solid #000;border-bottom:1px solid #000;overflow:hidden}
+.rd-hero img{width:100%;height:100%;object-fit:cover;object-position:center 53%;display:block}
+.rd-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.48) 0,rgba(0,0,0,.15) 38%,rgba(0,0,0,0) 62%);pointer-events:none}
+.rd-hero-copy{position:absolute;left:12px;top:118px;width:470px;color:#fff;z-index:1}
+.rd-hero h1{font-family:"Outfit 6",sans-serif;font-weight:700;font-size:48px;line-height:1.05;margin:0 0 12px}
+.rd-hero p{font-family:"Outfit 4",sans-serif;font-weight:500;font-size:30px;line-height:1.28;margin:0;max-width:430px}
+
+/* introduzione — testo pieno dopo l'hero, come .lr-intro */
+.rd-intro{width:100%;border-bottom:1px solid #000;background:var(--rd-faint);box-sizing:border-box}
+.rd-intro-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;box-sizing:border-box}
+.rd-intro-inner p{font-family:"Outfit 4",sans-serif;font-size:18px;line-height:1.6;font-weight:500;margin:0 0 14px}
+.rd-intro-inner p:last-child{margin-bottom:0}
+
+/* righe di sezione affiancate — testo+immagine, come .dp-row-01/.dp-row-02 */
+.rd-row{width:100%;border-bottom:1px solid #000;background:var(--rd-faint);box-sizing:border-box}
+.rd-inner{width:1098px;margin:0 0 0 12px;padding:36px 0;display:grid;gap:26px;align-items:start;box-sizing:border-box}
+.rd-row-a .rd-inner{grid-template-columns:352px 720px}
+.rd-row-b .rd-inner{grid-template-columns:720px 345px;gap:33px}
+.rd-copy{font-family:"Outfit 4",sans-serif;color:#000}
+.rd-num{font-size:12px;line-height:1.75;font-weight:500;margin:0 0 8px;color:#000}
+.rd-copy h2{font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;margin:0 0 14px}
+.rd-copy p{font-size:14px;line-height:1.78;font-weight:500;margin:0 0 10px}
+.rd-copy strong{font-family:"Outfit 6",sans-serif;font-weight:700}
+.rd-media img{display:block;width:100%;height:auto}
+.rd-media.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* etichette discrete prima/dopo, sotto ciascuna immagine della coppia.
+   Le due foto hanno inquadrature/proporzioni diverse: per un confronto
+   immediatamente leggibile (stessa altezza, etichette allineate) le
+   immagini della coppia prima/dopo sono ritagliate a un rapporto
+   comune, invece del semplice height:auto usato altrove. */
+.rd-media.pair .rd-compare{display:flex;flex-direction:column;gap:8px}
+.rd-compare img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
+.rd-label{font-family:"Outfit 4",sans-serif;font-size:12px;line-height:1.75;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:#000;margin:0}
+
+/* righe a piena larghezza (01/02/04) — variante impilata: immagine
+   (singola, coppia o assente) sopra, testo sotto in colonna di
+   lettura ridotta; sezione 02 aggiunge un'immagine finale dopo il
+   testo per la foto dell'incontro tra i volumi */
+.rd-row-full .rd-inner{display:block}
+.rd-row-full .rd-media{margin:0 0 26px}
+.rd-row-full .rd-copy{max-width:760px}
+.rd-row-full .rd-media-after{margin:26px 0 0}
+
+@media(max-width:1199px){
+  .rd-wrap{width:100%}
+  .rd-hero{width:100%}
+  .rd-intro-inner,.rd-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}
+}
+@media(max-width:900px){
+  .rd-hero{height:auto;aspect-ratio:4/3}
+  .rd-hero-copy{left:20px;right:20px;top:auto;bottom:24px;width:auto}
+  .rd-hero h1{font-size:34px}
+  .rd-hero p{font-size:22px}
+  .rd-row-a .rd-inner,.rd-row-b .rd-inner{grid-template-columns:1fr;gap:18px}
+  .rd-row-b .rd-media{order:2}.rd-row-b .rd-copy{order:1}
+  .rd-media.pair{grid-template-columns:1fr}
+}
