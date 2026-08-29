@@ -1,19 +1,100 @@
-/* Villa E|I — affinamento conservativo.
-   Mantiene integralmente la composizione originale e interviene solo su
-   qualità della fascia fotografica e chiusura della pagina. */
-.i13{object-fit:cover;object-position:center;display:block}
-/* Riduce eventuale spazio residuo Sitely tra contenuto e footer, senza
-   alterare la struttura del footer stesso. */
-body > .ps181{margin-top:-2624px}
-@media(max-width:1199px) and (min-width:960px){body > .ps181{margin-top:-2099px}}
-@media(max-width:959px) and (min-width:768px){body > .ps181{margin-top:-1679px}}
-@media(max-width:767px) and (min-width:480px){body > .ps181{margin-top:-869px}}
-@media(max-width:479px){body > .ps181{margin-top:-580px}}
+/* Villa E|I — pagina migrata dall'architettura legacy Sitely al sistema
+   grafico moderno usato dalle altre 8 pagine progetto. Classi indipendenti
+   .ei-* che duplicano gli stessi valori esatti di css/progetto-villa-dp-ei.css
+   (che a sua volta dichiara di essere "costruita sul DNA visivo di Villa E|I"):
+   stessa convenzione di ogni altra pagina progetto del sito, un file CSS
+   indipendente per pagina anche quando i valori sono identici, per evitare
+   accoppiamenti involontari tra pagine editorialmente autonome.
+   Nessun'altra pagina precedente nella sequenza progetti: vedi .ei-projnav
+   più sotto, introdotta separatamente nella PR #23. */
+:root{--ei-tint:rgba(120,88,67,.16);--ei-faint:rgba(120,88,67,.01)}
 
-/* Navigazione progetto precedente/successivo — stile D|P (css/progetto-villa-dp-ei.css),
-   scoped con classi proprie perché questa pagina non è ancora sul sistema .dp-*.
-   Nessuna pagina precedente per Villa E|I (prima della sequenza): la cella sinistra
-   resta un <div></div> vuoto e la griglia collassa a una colonna. */
+.ei-wrap{width:1200px;margin:0 auto}
+
+/* hero fotografico */
+.ei-hero{position:relative;width:1200px;height:480px;margin:0 auto;border-top:1px solid #000;border-bottom:1px solid #000;overflow:hidden}
+.ei-hero img{width:100%;height:100%;object-fit:cover;object-position:center 53%;display:block}
+.ei-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.48) 0,rgba(0,0,0,.15) 38%,rgba(0,0,0,0) 62%);pointer-events:none}
+.ei-hero-copy{position:absolute;left:12px;top:118px;width:470px;color:#fff;z-index:1}
+.ei-hero h1{font-family:"Outfit 6",sans-serif;font-weight:700;font-size:48px;line-height:1.05;margin:0 0 12px}
+.ei-hero p{font-family:"Outfit 4",sans-serif;font-weight:500;font-size:30px;line-height:1.28;margin:0;max-width:430px}
+
+/* righe di sezione affiancate — testo+immagine */
+.ei-row{width:100%;border-bottom:1px solid #000;background:var(--ei-faint)}
+.ei-row:first-of-type{border-top:0}
+.ei-inner{width:1098px;margin:0 0 0 12px;display:grid;align-items:stretch}
+.ei-row-01{height:360px;padding-top:20px;box-sizing:border-box}
+.ei-row-01 .ei-inner{grid-template-columns:352px 720px;gap:26px;height:320px}
+.ei-row-02{height:380px;padding-top:20px;box-sizing:border-box}
+.ei-row-02 .ei-inner{grid-template-columns:720px 345px;gap:33px;height:340px}
+.ei-copy{overflow:hidden;font-family:"Outfit 4",sans-serif;color:#000;box-sizing:border-box}
+.ei-num{font-size:12px;line-height:1.75;font-weight:500;margin:0 0 8px;color:#000}
+.ei-copy h2{font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;margin:0 0 14px}
+.ei-copy p{font-size:14px;line-height:1.78;font-weight:500;margin:0 0 10px}
+.ei-copy strong{font-family:"Outfit 6",sans-serif;font-weight:700}
+.ei-media{overflow:hidden;background:#eee}
+.ei-media img{display:block;width:100%;height:100%;object-fit:cover}
+.ei-row-01 .ei-media img{object-position:center 48%}
+.ei-row-02 .ei-media img{object-position:center 50%}
+
+/* trittico "tre decisioni" */
+.ei-three{height:300px;border-bottom:1px solid #000;background:var(--ei-tint);box-sizing:border-box;padding-top:20px}
+.ei-three .ei-heading{margin-left:12px;font-family:"Outfit 6",sans-serif;font-size:24px;line-height:1.38;font-weight:700;height:54px}
+.ei-three-grid{margin-left:12px;margin-top:18px;width:1098px;height:189px;display:grid;grid-template-columns:278px 1px 280px 1px 299px;column-gap:60px}
+.ei-three-item{font-family:"Outfit 4",sans-serif;font-size:14px;line-height:1.72;font-weight:500;overflow:hidden}
+.ei-three-item b{font-family:"Outfit 6",sans-serif;font-weight:700}
+.ei-divider{background:#000;height:189px;width:1px}
+
+/* galleria a 3 immagini */
+.ei-gallery{height:300px;border-bottom:1px solid #000;background:var(--ei-faint);padding-top:17px;box-sizing:border-box}
+.ei-gallery .ei-gallery-num{margin-left:12px;font-family:"Outfit 4",sans-serif;font-size:12px;line-height:1.75;height:21px}
+.ei-gallery-grid{display:grid;grid-template-columns:380px 380px 380px;gap:20px;margin-left:10px;margin-top:27px;width:1180px;height:200px}
+.ei-gallery-grid figure{margin:0;overflow:hidden;height:200px}
+.ei-gallery-grid img{width:100%;height:100%;object-fit:cover;display:block}
+.ei-gallery-grid figure:nth-child(1) img{object-position:center 50%}
+.ei-gallery-grid figure:nth-child(2) img{object-position:center 48%}
+.ei-gallery-grid figure:nth-child(3) img{object-position:center 52%}
+
+/* riga finale 05 */
+.ei-row-05{height:460px;border-bottom:1px solid #000;background:var(--ei-faint);padding-top:28px;box-sizing:border-box}
+.ei-row-05 .ei-inner{grid-template-columns:352px 720px;gap:26px;height:404px}
+.ei-row-05 .ei-copy{padding-top:0}
+.ei-row-05 .ei-media{height:300px;margin-top:52px}
+.ei-row-05 .ei-media img{object-position:center 50%}
+
+/* citazione */
+.ei-quote{height:240px;border-bottom:1px solid #000;background:var(--ei-tint);box-sizing:border-box;padding-top:54px}
+.ei-quote p{width:1175px;margin:0 0 0 12px;font-family:"Outfit 6",sans-serif;font-size:23px;line-height:1.42;font-weight:700}
+
+/* CTA */
+.ei-cta{height:120px;border-bottom:1px solid #000;background:var(--ei-faint);box-sizing:border-box;padding-top:19px}
+.ei-cta-inner{width:1075px;margin-left:12px;height:66px;display:flex;align-items:center;justify-content:space-between}
+.ei-cta p{font-family:"Outfit 6",sans-serif;font-size:22px;line-height:1.35;font-weight:700;width:560px;margin:0}
+.ei-cta a{font-family:"Outfit 6",sans-serif;font-size:12px;font-weight:700;color:#fff;background:#000;padding:17px 28px;text-decoration:none;display:inline-block}
+
+@media(max-width:1199px){
+  .ei-wrap,.ei-hero{width:100%;min-width:0}.ei-hero{height:auto;aspect-ratio:2.5/1}.ei-inner,.ei-three-grid,.ei-gallery-grid,.ei-quote p,.ei-cta-inner{width:calc(100% - 48px);margin-left:24px;margin-right:24px}
+  .ei-row-01,.ei-row-02,.ei-three,.ei-gallery,.ei-row-05,.ei-quote,.ei-cta{height:auto;padding:32px 0}
+  .ei-row-01 .ei-inner,.ei-row-02 .ei-inner,.ei-row-05 .ei-inner{height:auto;grid-template-columns:1fr 1.75fr;gap:28px}
+  .ei-row-02 .ei-inner{grid-template-columns:1.75fr 1fr}
+  .ei-row-05 .ei-media{height:auto;margin-top:0}.ei-media img{aspect-ratio:16/10}
+  .ei-three .ei-heading{margin-left:24px;height:auto;margin-bottom:24px}.ei-three-grid{height:auto;grid-template-columns:1fr 1px 1fr 1px 1fr;column-gap:28px}.ei-divider{height:100%}
+  .ei-gallery .ei-gallery-num{margin-left:24px}.ei-gallery-grid{height:auto;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.ei-gallery-grid figure{height:auto}.ei-gallery-grid img{aspect-ratio:1.9/1}
+  .ei-quote p{font-size:21px}.ei-cta-inner{height:auto}.ei-hero-copy{left:24px;top:auto;bottom:36px}
+}
+@media(max-width:767px){
+  .ei-hero{aspect-ratio:4/3}.ei-hero-copy{left:20px;right:20px;bottom:24px;width:auto}.ei-hero h1{font-size:34px}.ei-hero p{font-size:22px}
+  .ei-row-01 .ei-inner,.ei-row-02 .ei-inner,.ei-row-05 .ei-inner{grid-template-columns:1fr;gap:18px}.ei-row-02 .ei-media{order:2}.ei-row-02 .ei-copy{order:1}
+  .ei-copy h2{font-size:22px}.ei-copy p{font-size:14px;line-height:1.65}.ei-media img{aspect-ratio:4/3}
+  .ei-three-grid{grid-template-columns:1fr;gap:22px}.ei-divider{display:none}.ei-three-item{overflow:visible}
+  .ei-gallery-grid{grid-template-columns:1fr;gap:8px}.ei-gallery-grid img{aspect-ratio:16/9}
+  .ei-quote p{font-size:19px}.ei-cta-inner{display:block}.ei-cta p{width:auto;margin-bottom:20px}.ei-cta a{width:auto}
+}
+
+/* Navigazione progetto precedente/successivo — stile D|P, stessi valori di
+   css/progetto-villa-dp-ei.css. Nessuna pagina precedente per Villa E|I
+   (prima della sequenza): la cella sinistra resta un <div></div> vuoto e
+   la griglia collassa a una colonna. Introdotta nella PR #23, invariata. */
 .ei-projnav{width:100%;border-bottom:1px solid #000;background:rgba(120,88,67,.01);box-sizing:border-box}
 .ei-projnav-inner{width:1098px;margin:0 0 0 12px;padding:28px 0;display:grid;grid-template-columns:1fr 1fr;box-sizing:border-box;font-family:"Outfit 4",sans-serif}
 .ei-projnav-inner:has(>div:empty){grid-template-columns:1fr}
