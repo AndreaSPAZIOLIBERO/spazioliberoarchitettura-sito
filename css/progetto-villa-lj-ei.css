@@ -2,7 +2,7 @@
 :root{--lj-ink:#000;--lj-paper:#fff;--lj-warm:#785843;--lj-tint:rgba(120,88,67,.16);--lj-faint:rgba(120,88,67,.01)}
 .lj-wrap{width:1200px;margin:0 auto}
 .lj-hero{position:relative;width:1200px;height:480px;margin:0 auto;border-top:1px solid #000;border-bottom:1px solid #000;overflow:hidden}
-.lj-hero img{width:100%;height:100%;object-fit:cover;object-position:center 54%;display:block}
+.lj-hero img{width:100%;height:100%;object-fit:cover;object-position:center 49%;display:block}
 .lj-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.12) 38%,rgba(0,0,0,0) 65%);pointer-events:none}
 .lj-hero-copy{position:absolute;left:12px;top:116px;width:560px;color:#fff;z-index:1}
 .lj-hero h1{font-family:"Outfit 6",sans-serif;font-weight:700;font-size:48px;line-height:1.05;margin:0 0 12px}
