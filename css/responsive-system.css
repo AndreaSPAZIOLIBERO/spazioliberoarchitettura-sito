@@ -66,14 +66,14 @@ a,button,summary{touch-action:manipulation}
   body>div{font-size:initial}
   /* old Sitely header is not usable by touch at the exported mobile scale */
   #Header{display:none!important}
-  .sl-mobile-header{display:block!important;position:sticky;top:0;z-index:10000;background:#fff}
+  body.sl-has-mobile-reader > .sl-mobile-header{display:block!important;position:sticky;top:0;z-index:10000;background:#fff}
   header:not(.sl-mobile-header){height:auto!important;padding:0!important}
   header:not(.sl-mobile-header) .header-in,header:not(.sl-mobile-header) .h{width:100%!important;padding:0!important}
   header:not(.sl-mobile-header) .brand,header:not(.sl-mobile-header)>* > .brand{margin:18px!important}
   header:not(.sl-mobile-header) nav{display:none!important}
   header:not(.sl-mobile-header) .sl-mobile-menu{display:block!important;margin-left:auto;margin-right:18px}
   .sl-mobile-reader{display:block!important}
-  body.sl-has-mobile-reader > div:not(.sl-mobile-reader):not(.sl-mobile-header):not(#consentBanner),body.sl-has-mobile-reader > footer:not(.sl-mobile-reader footer){display:none!important}
+  body.sl-has-mobile-reader > div:not(.sl-mobile-reader):not(.sl-mobile-header):not(#consentBanner),body.sl-has-mobile-reader > footer:not(.sl-mobile-reader footer):not(.sl-site-footer){display:none!important}
   body.sl-has-mobile-reader > script{display:none}
   .progetti-main,.villa-main{max-width:none!important;width:auto!important;margin-left:18px!important;margin-right:18px!important;padding-left:0!important;padding-right:0!important}
   .progetti-intro__title{font-size:39px!important}.progetti-intro__subtitle{font-size:19px!important;line-height:1.35!important}.progetti-intro__text{font-size:17px!important;line-height:1.62!important}
