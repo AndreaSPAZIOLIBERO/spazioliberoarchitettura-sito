@@ -8,8 +8,8 @@
    .lr-row-full è una variante impilata (immagine sopra, testo sotto)
    dello stesso contenitore .lr-row/.lr-inner, per le sezioni 01/02 che
    nel documento non seguono lo schema affiancato di .dp-row-01/02. */
-@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
-@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 6";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
 
 :root{--lr-tint:rgba(120,88,67,.16);--lr-faint:rgba(120,88,67,.01)}
 
