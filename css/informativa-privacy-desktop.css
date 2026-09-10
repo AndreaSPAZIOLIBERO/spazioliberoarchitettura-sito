@@ -1,0 +1,20 @@
+/* Estende la variante "mobile-reader" (già coerente col sistema grafico del sito)
+   anche al range desktop/tablet di questa pagina, al posto della variante legacy
+   Sitely che sopra i 767px perde la gerarchia dei titoli e, tra 768 e 1024px,
+   collassa il font-size fino a diventare illeggibile.
+   Scoped alla sola informativa-sulla-privacy.html tramite la classe sul <body>:
+   non tocca css/responsive-system.css né altre pagine. */
+body.sl-privacy-wide-reader .sl-mobile-reader{display:block}
+body.sl-privacy-wide-reader #Header,
+body.sl-privacy-wide-reader div.ps416.v57.s421{display:none!important}
+
+@media(min-width:768px){
+  body.sl-privacy-wide-reader .sl-mobile-reader .slmr-hero,
+  body.sl-privacy-wide-reader .sl-mobile-reader .slmr-section{
+    width:min(780px,calc(100% - 64px));
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0;
+    padding-right:0;
+  }
+}
