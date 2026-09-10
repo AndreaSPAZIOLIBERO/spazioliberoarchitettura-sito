@@ -9,8 +9,8 @@
    editoriale) e con un blocco immagine aggiuntivo dopo il testo
    (sezione 02, foto dell'incontro tra i volumi, separata dal
    confronto prima/dopo). */
-@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
-@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 6";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
 
 :root{--rd-tint:rgba(120,88,67,.16);--rd-faint:rgba(120,88,67,.01)}
 

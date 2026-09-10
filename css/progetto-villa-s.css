@@ -5,8 +5,8 @@
    convenzione già usata per Padiglione C e Villa M|M. Hero fotografico
    e CTA allineati 1:1 a .dp-hero/.dp-cta. Nessun blocco a tre colonne
    (il documento editoriale non ne prevede uno). */
-@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
-@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 6";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
 
 :root{--vs-tint:rgba(120,88,67,.16);--vs-faint:rgba(120,88,67,.01)}
 

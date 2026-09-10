@@ -8,8 +8,8 @@
    Il blocco a tre colonne di D|P non ha un equivalente nel contenuto di
    questa pagina (nessun elenco di tre concetti/dati nel testo esistente)
    e non è stato aggiunto, per non inventare testo nuovo. */
-@font-face{font-display:block;font-family:"Outfit 6";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
-@font-face{font-display:block;font-family:"Outfit 4";src:url('css/Outfit_wght_.woff2') format('woff2'),url('css/Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 6";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:700;font-style:normal}
+@font-face{font-display:block;font-family:"Outfit 4";src:url('Outfit_wght_.woff2') format('woff2'),url('Outfit_wght_.woff') format('woff');font-weight:500;font-style:normal}
 
 :root{--max:1200px;--mm-tint:rgba(120,88,67,.16);--mm-faint:rgba(120,88,67,.01)}
 
