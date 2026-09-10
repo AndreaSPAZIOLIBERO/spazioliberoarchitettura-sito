@@ -20,8 +20,14 @@
 .pi-hero h1{font-size:clamp(42px,5.4vw,72px);font-weight:430;line-height:1.02;margin:0 0 32px;max-width:880px}.pi-hero p{font-size:21px;line-height:1.5;max-width:760px;margin:0}
 .pi-photo{margin:42px 0 0;max-height:580px;object-fit:cover}.pi-sec{display:grid;grid-template-columns:110px minmax(0,760px);gap:42px;padding:58px 0;border-bottom:1px solid #bbb}.pi-no{font-size:42px;font-weight:350;line-height:1}
 .pi-sec h2{font-size:31px;line-height:1.1;font-weight:450;margin:0 0 22px}.pi-sec h3{font-size:19px;margin:28px 0 8px}.pi-sec p{font-size:18px;line-height:1.72;margin:0 0 16px}.pi-big{font-size:24px!important;line-height:1.45!important}
-.pi-cta{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:48px 0 58px}.pi-cta p{font-size:22px;margin:0}.pi-cta a{background:#000;color:#fff;padding:17px 24px;text-decoration:none;border:1px solid #000;font-size:13px}
-@media(max-width:760px){.pi{width:calc(100% - 32px)}.pi-hero,.pi-sec{grid-template-columns:1fr;gap:18px}.pi-hero{padding:42px 0}.pi-hero p{font-size:19px}.pi-photo{margin-top:28px}.pi-sec{padding:42px 0}.pi-sec p{font-size:17px}.pi-big{font-size:21px!important}.pi-cta{display:block;padding:38px 0 46px}.pi-cta p{font-size:19px;margin-bottom:20px}.pi-cta a{display:block;text-align:center}}
+.pi-form{padding:48px 0 58px}.pi-form h2{font-size:28px;font-weight:450;line-height:1.3;margin:0 0 34px;max-width:780px}
+.pi-field{margin-bottom:22px}.pi-field label{display:block;font-size:13px;font-weight:700;letter-spacing:.4px;margin-bottom:8px}
+.pi-field input,.pi-field textarea{width:100%;font-family:Outfit,Arial,sans-serif;font-size:16px;padding:14px 16px;border:1px solid #111;background:#fff;color:#111;box-sizing:border-box}
+.pi-field textarea{min-height:140px;resize:vertical}.pi-field input:focus,.pi-field textarea:focus{outline:2px solid #785843;outline-offset:1px}
+.pi-consent{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;margin:26px 0 32px;cursor:pointer}.pi-consent input{margin-top:3px}
+.pi-form button{background:#000;color:#fff;padding:17px 32px;border:1px solid #000;font-size:13px;letter-spacing:.4px;cursor:pointer;font-family:Outfit,Arial,sans-serif}.pi-form button:hover{background:#785843;border-color:#785843}
+.pi-form-msg{padding:26px;border:1px solid #111;font-size:17px;line-height:1.55;max-width:640px}.pi-form-success{background:rgba(120,88,67,.1)}.pi-form-error a{text-decoration:underline;color:inherit}
+@media(max-width:760px){.pi{width:calc(100% - 32px)}.pi-hero,.pi-sec{grid-template-columns:1fr;gap:18px}.pi-hero{padding:42px 0}.pi-hero p{font-size:19px}.pi-photo{margin-top:28px}.pi-sec{padding:42px 0}.pi-sec p{font-size:17px}.pi-big{font-size:21px!important}.pi-form{padding:38px 0 46px}.pi-form h2{font-size:23px;margin-bottom:26px}.pi-form button{display:block;width:100%;text-align:center}}
 </style><link href="css/site.834515.css" rel="stylesheet"/>
 <link href="css/cookie-consent.css" rel="stylesheet"/>
 </head><body><div class="sl-site-header" role="banner"><div class="sl-site-header__inner">
@@ -32,7 +38,23 @@
 <section class="pi-sec"><div class="pi-no">02</div><div><h2>Cosa succede davvero?</h2><p>C’è chi arriva con una cartella piena di fotografie, chi con una pianta disegnata a mano, chi con un terreno ma nessuna idea e chi pensa di sapere già esattamente cosa vuole.</p><p>Il punto di partenza non è la quantità di materiale che avete preparato, ma ciò che riusciamo a capire insieme da quel materiale.</p></div></section>
 <section class="pi-sec"><div class="pi-no">03</div><div><h2>Cosa potete aspettarvi?</h2><h3>Ascoltiamo</h3><p>Raccontateci come immaginate di vivere la vostra casa, le vostre abitudini, ciò che vi piace e ciò che oggi non funziona.</p><h3>Capiremo insieme</h3><p>Mettiamo in relazione esigenze, possibilità e vincoli per distinguere quello che è davvero importante da ciò che può aspettare.</p><h3>Non vi venderemo un progetto</h3><p>Il primo incontro serve anche a capire se c’è sintonia. Perché il percorso che seguirà sarà lungo e il modo in cui lavoriamo insieme conta quasi quanto il risultato.</p></div></section>
 <section class="pi-sec"><div class="pi-no">04</div><div><h2>E dopo?</h2><p>Se decidiamo di continuare, comincia il lavoro vero: verifiche, progetto, confronto, costi, dettagli e infine cantiere. Cerchiamo di affrontare le decisioni nel momento in cui possono ancora essere prese con calma.</p></div></section>
-<section class="pi-cta"><p>Se state pensando alla vostra casa, possiamo cominciare da una conversazione.</p><a href="mailto:contatto@spazioliberoarchitettura.it?subject=Richiesta%20di%20primo%20incontro%20progettuale">FISSIAMO UNA CONVERSAZIONE</a></section>
+<section class="pi-form" id="pi-form"><h2>Se state pensando alla vostra casa, possiamo cominciare da una conversazione.</h2>
+<form id="contactForm">
+<input type="hidden" name="access_key" value="a6a23cfc-f84b-4b00-9d35-c62e0b1b1471">
+<input type="hidden" name="subject" value="Nuova richiesta dal sito — modulo di contatto">
+<input type="hidden" name="from_name" value="Sito SPAZIOLIBERO architettura">
+<input type="checkbox" name="botcheck" class="pi-hp" style="display:none" tabindex="-1" autocomplete="off">
+<div class="pi-field"><label for="pi-name">Nome e Cognome</label><input id="pi-name" name="name" type="text" required></div>
+<div class="pi-field"><label for="pi-email">Email</label><input id="pi-email" name="email" type="email" required></div>
+<div class="pi-field"><label for="pi-phone">Telefono</label><input id="pi-phone" name="phone" type="tel"></div>
+<div class="pi-field"><label for="pi-message">Messaggio</label><textarea id="pi-message" name="message" required placeholder="Raccontateci a che punto siete: un terreno, un'idea, una casa da trasformare..."></textarea></div>
+<label class="pi-consent"><input name="consent" type="checkbox" required> Ho letto e accetto l'<a href="informativa-sulla-privacy.html">informativa sulla privacy</a>.</label>
+<button type="submit">FISSIAMO UNA CONVERSAZIONE</button>
+</form>
+<div class="pi-form-msg pi-form-success" hidden>Messaggio ricevuto. Vi risponderemo il prima possibile.</div>
+<div class="pi-form-msg pi-form-error" hidden>Si è verificato un problema nell'invio. Scriveteci direttamente a <a href="mailto:contatto@spazioliberoarchitettura.it">contatto@spazioliberoarchitettura.it</a>.</div>
+</section>
+<script>(function(){var form=document.getElementById('contactForm');if(!form)return;var success=document.querySelector('.pi-form-success');var error=document.querySelector('.pi-form-error');form.addEventListener('submit',function(e){e.preventDefault();error.hidden=true;var data=new FormData(form);fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:data}).then(function(res){return res.json().then(function(json){return {ok:res.ok,json:json};});}).then(function(result){if(result.ok&&result.json.success){form.hidden=true;success.hidden=false;}else{error.hidden=false;}}).catch(function(){error.hidden=false;});});})();</script>
 </main><footer class="sl-site-footer" role="contentinfo">
 <div><div class="sl-site-footer__brand">SPAZIOLIBERO architettura</div><div class="sl-site-footer__meta">di Ravagli Andrea e Sancisi Maddalena<br>Parma, Viale delle Rimembranze 36.<br>P. IVA 02237840349</div></div>
 <div class="sl-site-footer__contact"><a href="mailto:contatto@spazioliberoarchitettura.it">contatto@spazioliberoarchitettura.it</a></div>
