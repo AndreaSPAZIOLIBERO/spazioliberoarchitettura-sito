@@ -54,7 +54,7 @@
 <div class="pi-form-msg pi-form-success" hidden>Messaggio ricevuto. Vi risponderemo il prima possibile.</div>
 <div class="pi-form-msg pi-form-error" hidden>Si è verificato un problema nell'invio. Scriveteci direttamente a <a href="mailto:contatto@spazioliberoarchitettura.it">contatto@spazioliberoarchitettura.it</a>.</div>
 </section>
-<script>(function(){var form=document.getElementById('contactForm');if(!form)return;var success=document.querySelector('.pi-form-success');var error=document.querySelector('.pi-form-error');form.addEventListener('submit',function(e){e.preventDefault();error.hidden=true;var data=new FormData(form);fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:data}).then(function(res){return res.json().then(function(json){return {ok:res.ok,json:json};});}).then(function(result){if(result.ok&&result.json.success){form.hidden=true;success.hidden=false;}else{error.hidden=false;}}).catch(function(){error.hidden=false;});});})();</script>
+<script>(function(){var sourcePage='(diretto)';if(document.referrer){try{var r=new URL(document.referrer);sourcePage=r.origin===location.origin?(r.pathname.replace(/^\//,'')||'index.html'):r.hostname;}catch(e){}}var form=document.getElementById('contactForm');if(!form)return;var success=document.querySelector('.pi-form-success');var error=document.querySelector('.pi-form-error');form.addEventListener('submit',function(e){e.preventDefault();error.hidden=true;var data=new FormData(form);fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:data}).then(function(res){return res.json().then(function(json){return {ok:res.ok,json:json};});}).then(function(result){if(result.ok&&result.json.success){form.hidden=true;success.hidden=false;if(typeof gtag==='function'){gtag('event','generate_lead',{form_id:'primo_incontro_contact_form',source_page:sourcePage});}}else{error.hidden=false;}}).catch(function(){error.hidden=false;});});})();</script>
 </main><footer class="sl-site-footer" role="contentinfo">
 <div><div class="sl-site-footer__brand">SPAZIOLIBERO architettura</div><div class="sl-site-footer__meta">di Ravagli Andrea e Sancisi Maddalena<br>Parma, Viale delle Rimembranze 36.<br>P. IVA 02237840349</div></div>
 <div class="sl-site-footer__contact"><a href="mailto:contatto@spazioliberoarchitettura.it">contatto@spazioliberoarchitettura.it</a></div>
@@ -119,5 +119,5 @@ Accetta selezionati
 </div>
 <script src="js/popup.6a5c75.js"></script>
 <script src="js/consent.6a5c75.js"></script>
-<script>cnsb(1,'informativa-sulla-privacy.html',undefined,0);</script>
+<script>cnsq(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-3RPBWJ5GT1';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-3RPBWJ5GT1');},['A']);cnsb(1,'informativa-sulla-privacy.html',undefined,0);</script>
 </body></html>
